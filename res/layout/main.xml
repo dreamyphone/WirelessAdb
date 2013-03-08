@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".WirelessAdbActivity" >
+
+    <TextView 
+	    android:id="@+id/status_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/status"
+	    android:paddingTop="5dp"/>
+	<TextView 
+	    android:id="@+id/status"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/status_unknown"
+	    android:layout_toRightOf="@id/status_text"
+	    android:paddingTop="5dp"/>
+	<Button 
+	    android:id="@+id/refresh"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@id/status"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/refresh"/>
+	
+	<Button 
+	    android:id="@+id/roll"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	  	android:layout_below="@id/refresh"
+	  	android:layout_alignLeft="@id/refresh"
+	  	android:layout_alignRight="@id/refresh"
+	  	android:text="@string/roll"/>
+	
+	<TextView 
+	    android:id="@+id/port_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/refresh"
+	    android:text="@string/port"
+	    android:paddingTop="10dp"/>
+	
+	<EditText 
+	    android:id="@+id/port"
+	    android:layout_toRightOf="@id/port_text"
+	    android:layout_toLeftOf="@id/roll"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/refresh"
+	    android:hint="@string/port_hint"
+	    android:inputType="number"/>
+	<TextView 
+	    android:id="@+id/description"
+	    android:layout_below="@id/port_text"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"/>
+	
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <Button 
+		    android:id="@+id/enable"
+		    android:text="@string/enable"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_weight="1"/>
+		<Button 
+		    android:id="@+id/disable"
+		    android:text="@string/disable"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"/>
+	
+		<Button 
+		    android:id="@+id/close"
+		    android:text="@string/close"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"/>
+	</LinearLayout>
+
+</RelativeLayout>

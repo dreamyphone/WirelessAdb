@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, WirelessAdbActivity!</string>
+    <string name="app_name">WirelessAdb</string>
+    <string name="menu_settings"></string>
+    <string name="status">Status:</string>
+    <string name="status_unknown">unkonwn</string>
+    <string name="refresh">Refresh</string>
+    <string name="port">Port:</string>
+    <string name="roll">roll</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="close">Close</string>
+    <string name="port_hint">input port here.</string>
+
+</resources>
